@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Training_Dotnet8_CSharp12": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:55344;http://localhost:55345"
+    }
+  }
+}

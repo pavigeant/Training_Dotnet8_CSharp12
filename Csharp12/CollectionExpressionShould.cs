@@ -1,19 +1,4 @@
-﻿namespace Training_Dotnet8_CSharp12.Dotnet8;
-
-public class PrimaryConstructorShould
-{
-    [Fact]
-    public void AllowPrimaryConstructor()
-    {
-        var person = new Person("John", "Doe");
-        Assert.Equal("John Doe", person.ToString());
-    }
-}
-
-file class Person(string firstName, string lastName)
-{
-    public override string ToString() => $"{firstName} {lastName}";
-}
+﻿namespace Training_Dotnet8_CSharp12.Csharp12;
 
 public class CollectionExpressionShould
 {
@@ -50,7 +35,7 @@ public class CollectionExpressionShould
     {
         int[] a = [1, 2, 3];
         int[] b = [4, 5, 6];
-        int[] c = [..a, ..b];
+        int[] c = [.. a, .. b];
 
         Assert.Equal(6, c.Length);
         Assert.True(c is [1, 2, .., 6]);

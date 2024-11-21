@@ -6,6 +6,8 @@ public class RequiredShould
     public void PreventCreatingAClassWithoutRequiredProperties()
     {
         var person = new Person();
+
+
         Assert.NotNull(person.FirstName);
         Assert.NotNull(person.LastName);
         Assert.Null(person.MiddleName);

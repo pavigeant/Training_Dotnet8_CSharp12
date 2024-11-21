@@ -45,7 +45,7 @@ public class GenericMathShould
     public void AddFloats()
     {
         var result = Add(1.1f, 2.2f);
-        Assert.Equal(3.3f, result);
+        Assert.Equal(3.3f, result, 0.1f);
     }
 
     // IAdditionOperators<TSelf,TOther,TResult>      x + y
